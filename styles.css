@@ -26,3 +26,33 @@ h2 {
     font-size: 16px;
     margin-bottom: 20px;
 }
+
+#students-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    justify-items: center;
+}
+
+.student-card {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    transition:0.3s;
+    width: 100%;
+    max-width: 250px;
+}
+
+.student-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
